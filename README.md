@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Plan Of Action
 
-Things you may want to cover:
+Try to do TDD at first
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+Then 
 
-* Database initialization
+Routes - > DB -> Models -> Controllers -> View
 
-* How to run the test suite
+rails routes --expanded                        
 
-* Services (job queues, cache servers, search engines, etc.)
+Items Model
+  -> belongs_to :user
+  validates etc
 
-* Deployment instructions
 
-* ...
+User Model
+ -> has_many :articles
+   validates etc
+
+Controllers 
+-> flash[:notice] = "Article was created successfully."
+
+
+   
+Use BootStrap for FE 
+->
+

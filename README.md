@@ -30,3 +30,7 @@ Controllers
 Use BootStrap for FE 
 ->
 
+End of day 4-5
+-> Loom Recording
+->ER Diagram USER has many reports + add attributes
+-> Set up guide for this

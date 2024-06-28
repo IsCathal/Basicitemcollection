@@ -1,36 +1,44 @@
-# README
+# Project Setup and Running Guide
 
-Plan Of Action
+## Prerequisites
 
-Try to do TDD at first
+Before running this application, ensure you have the following installed:
 
+- Ruby 3.2.0
+- Bundler
+- SQLite3
+- Node.js (for JavaScript runtime)
 
+## Setting Up the Application
 
+Follow these steps to set up and run the application:
 
-Then 
+1. **Clone the repository**
 
-Routes - > DB -> Models -> Controllers -> View
+   ```sh
+   git clone <repository_url>
+   cd <repository_directory>
 
-rails routes --expanded                        
+   ## Install dependencies
 
-Items Model
-  -> belongs_to :user
-  validates etc
+Run the following command to install the required gems:
 
+```sh
 
-User Model
- -> has_many :articles
-   validates etc
+bundle install
+Set up the database
+Run the following commands to create and set up the database:
 
-Controllers 
--> flash[:notice] = "Article was created successfully."
+sh
+Copy code
+rails db:create
+rails db:migrate
+Running the Application
+Start the Rails server
+Run the following command to start the server:
 
-
-   
-Use BootStrap for FE 
-->
-
-End of day 4-5
--> Loom Recording
-->ER Diagram USER has many reports + add attributes
--> Set up guide for this
+sh
+Copy code
+rails server
+Access the application
+Open your web browser and navigate to http://localhost:3000 to see the application running.

@@ -17,8 +17,10 @@ class ItemControllerTest < ActionDispatch::IntegrationTest
   # end
 
   test "should create item" do
+    user = User.new(name: "Charlie")
+    user.save
     assert_difference("Item.count", 1 ) do
-      post items_url, params: { item: { name: "Phone", description: "A Communication Device" } }
+      post items_url, params: { item: { name: "Phone", description: "A Communication Device", user_id: 1 } }
     end
   end
 

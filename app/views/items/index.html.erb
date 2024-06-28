@@ -15,7 +15,9 @@
       <tr>
         <td><%= itemsingle.name %></td>
         <td><%=itemsingle.description %></td>
-         <td>Owned by <%= %></td>
+          <% if (itemsingle.user_id.to_i != 0) %>
+            <td>Owned by <%= @user.find(itemsingle.user_id.to_i).name %></td>
+            <% end %>
         <% end %>
     </tbody>
   </thead>

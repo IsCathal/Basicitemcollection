@@ -1,6 +1,6 @@
 class Item < ApplicationRecord
-  #set relationships here
-
+  belongs_to :user
+  
   validates :name, presence: true,
                   length: {minimum: 3, maximum: 50}
 

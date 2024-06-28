@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  before_action :require_user, only: [ :create, :index ]
 
 
 
@@ -35,5 +36,9 @@ class ItemsController < ApplicationController
 
   def items_params
     params.require(:item).permit(:name, :description)
+  end
+
+  def require_user
+    @user = User.all
   end
 end

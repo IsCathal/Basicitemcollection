@@ -12,5 +12,7 @@ Rails.application.routes.draw do
   get 'items/index'
   root 'items#index'
   resources :items,  except: [:destroy, :update, :edit]
+  resources :users,  except: [:destroy, :update, :edit]
+
 
 end

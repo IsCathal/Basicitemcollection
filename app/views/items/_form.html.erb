@@ -9,7 +9,7 @@
   <% end %>
 
 
-<%= form_with(model: @item,local: true, data: { turbo: false } ) do |f| %>
+<%= form_with(model: @item, local: true, data: { turbo: false } ) do |f| %>
 
 <p> 
   <%= f.label :name, "Item Name" %><br/>
@@ -21,17 +21,11 @@
   <%= f.text_field :description %>
 </p>
 
+<p> 
+  <%= f.label :user_id, "User_ID" %><br/>
+  <%= f.text_field :user_id %>
+</p>
 
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu">
-    <% @user.each do |single_user|%>
-     <a class="dropdown-item" href="#"> <%= single_user.name %></a>
-    <% end %>
-  </div>
-</div>
 
 <p>
   <%= f.submit %>

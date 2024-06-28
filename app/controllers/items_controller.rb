@@ -35,7 +35,7 @@ class ItemsController < ApplicationController
 
 
   def items_params
-    params.require(:item).permit(:name, :description)
+    params.require(:item).permit(:name, :description, :user_id)
   end
 
   def require_user

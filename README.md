@@ -1,5 +1,6 @@
 # Project Setup and Running Guide
-
+##  ER Diagram 
+![image](https://github.com/IsCathal/basicItemCollection/assets/52865729/2484a868-6079-45a9-ae2e-85cc2f168770)
 ## Prerequisites
 
 Before running this application, ensure you have the following installed:
@@ -37,7 +38,7 @@ Running the Application
 Start the Rails server
 Run the following command to start the server:
 
-sh
+
 Copy code
 rails server
 Access the application

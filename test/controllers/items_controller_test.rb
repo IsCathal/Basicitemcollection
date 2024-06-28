@@ -2,7 +2,7 @@ require "test_helper"
 
 class ItemControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @item = Item.new(name: "Football", description:"A round object for kicking")
+    @item = Item.new(name: "Football", description: "A round object for kicking" )
   end
 
 
@@ -16,9 +16,9 @@ class ItemControllerTest < ActionDispatch::IntegrationTest
   #   assert_response :success
   # end
 
-  test "should create category" do
+  test "should create item" do
     assert_difference("Item.count", 1 ) do
-      post items_url, params: { category: { name: "Phone", description:"A Communication Device" } }
+      post items_url, params: { item: { name: "Phone", description: "A Communication Device" } }
     end
   end
 

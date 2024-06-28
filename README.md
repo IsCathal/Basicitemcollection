@@ -42,3 +42,6 @@ Copy code
 rails server
 Access the application
 Open your web browser and navigate to http://localhost:3000 to see the application running.
+
+##  ER Diagram 
+![image](https://github.com/IsCathal/basicItemCollection/assets/52865729/2484a868-6079-45a9-ae2e-85cc2f168770)

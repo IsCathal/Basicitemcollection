@@ -1,3 +1,20 @@
-<h1>Create a new category</h1>
+<h1>Display all the items</h1>
 
-<%= render 'form' %>
+
+<table class = "table" > 
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Descriptions</th>
+    </tr>
+
+    <tbody>
+      <% @item.each do |itemsingle|%>
+      <tr>
+        <td><%= itemsingle.name %></td>
+        <td><%=itemsingle.description %></td>
+        <% end %>
+    </tbody>
+  </thead>
+</table>
+

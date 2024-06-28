@@ -1,11 +1,13 @@
 class ItemsController < ApplicationController
 
   def show
-    @item = Item.find(params[:id])
+    @item = Item.all
 
   end
 
   def index
+    @item = Item.all
+
   end
 
   def new
@@ -20,11 +22,15 @@ class ItemsController < ApplicationController
   end
 
   def create
+  
     @item = Item.new(items_params)
+    
     if @item.save
       flash[:notice] = "Item was successfully created"
       redirect_to @item
+
     else
+      flash[:notice] = "There was an error"
       render 'new'
     end
   end

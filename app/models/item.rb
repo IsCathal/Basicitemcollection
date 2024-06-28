@@ -1,4 +1,5 @@
 class Item < ApplicationRecord
+  #set relationships here
 
   validates :name, presence: true,
                   length: {minimum: 3, maximum: 50}

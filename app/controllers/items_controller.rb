@@ -20,10 +20,13 @@ class ItemsController < ApplicationController
   end
 
   def create
+    byebug
     @item = Item.new(items_params)
+    
     if @item.save
       flash[:notice] = "Item was successfully created"
       redirect_to @item
+
     else
       render 'new'
     end

@@ -11,8 +11,16 @@ class ItemControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  # test "should get new" do
+  #   get new_items_url
+  #   assert_response :success
+  # end
 
-
+  test "should create category" do
+    assert_difference("Item.count", 1 ) do
+      post items_url, params: { category: { name: "Phone", description:"A Communication Device" } }
+    end
+  end
 
 
 

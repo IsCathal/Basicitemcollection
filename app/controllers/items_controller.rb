@@ -1,5 +1,7 @@
 class ItemsController < ApplicationController
 
+
+
   def show
     @item = Item.find(params[:id])
 
@@ -27,7 +29,7 @@ class ItemsController < ApplicationController
     
     if @item.save
       flash[:notice] = "Item was successfully created"
-      redirect_to @item
+      redirect_to items_path
 
     else
       flash[:notice] = "There was an error"

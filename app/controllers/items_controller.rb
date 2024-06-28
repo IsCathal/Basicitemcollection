@@ -22,7 +22,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    byebug
+  
     @item = Item.new(items_params)
     
     if @item.save
@@ -30,6 +30,7 @@ class ItemsController < ApplicationController
       redirect_to @item
 
     else
+      flash[:notice] = "There was an error"
       render 'new'
     end
   end

@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     
     if @user.save
       flash[:notice] = "Item was successfully created"
-      redirect_to user_path
+      redirect_to root_path
 
     else
       flash[:notice] = "There was an error"

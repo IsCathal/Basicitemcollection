@@ -1,1 +1,17 @@
 <h1>Display all the users</h1>
+
+<table class = "table" > 
+  <thead>
+    <tr>
+      <th>Item</th>
+    </tr>
+
+    <tbody>
+      <% @user.each do |usersingle|%>
+      <tr>
+        <td><%= usersingle.name %></td>
+        <% end %>
+    </tbody>
+  </thead>
+</table>
+

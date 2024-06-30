@@ -44,5 +44,5 @@ rails server
 Access the application
 Open your web browser and navigate to http://localhost:3000 to see the application running.
 
-##  Video Might Redo, when refreshed, but did finish under 8 hours  
-(https://drive.google.com/file/d/1ZAEAU8HpHWtDYUBaZCQADpZt-DRzy-Rr/view?usp=sharing)
+##  Video of create item action  
+https://drive.google.com/file/d/1w1dQugWre1Lb6tU_2GmFum5ABrdhidlQ/view?usp=sharing

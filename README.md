@@ -1,6 +1,7 @@
 # Project Setup and Running Guide
 ##  ER Diagram 
-![image](https://github.com/IsCathal/basicItemCollection/assets/52865729/2484a868-6079-45a9-ae2e-85cc2f168770)
+![image](https://github.com/IsCathal/Basicitemcollection/assets/52865729/660177db-0257-448e-aa5c-c3ceb7a6d40e)
+
 ## Prerequisites
 
 Before running this application, ensure you have the following installed:

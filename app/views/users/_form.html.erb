@@ -1,7 +1,7 @@
-<% if @user.errors.any? %>
+<% if @users.errors.any? %>
   <h2>You got an error </h2>
   <ul>
-    <% @user.errors.full_messages.each do |msg| %>
+    <% @users.errors.full_messages.each do |msg| %>
      <li><%= msg %></li>
 
     <% end %>
@@ -9,7 +9,7 @@
   <% end %>
 
 
-<%= form_with(model: @user,local: true, data: { turbo: false } ) do |f| %>
+<%= form_with(model: @users,local: true, data: { turbo: false } ) do |f| %>
 
 <p> 
   <%= f.label :name, "Item Name" %><br/>

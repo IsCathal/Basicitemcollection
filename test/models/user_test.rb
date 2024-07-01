@@ -1,7 +1,7 @@
 class UserTest < ActiveSupport::TestCase 
 
   def setup
-    @user = User.new(name: "Charlie")
+    @users= User.new(name: "Charlie")
   end
 
   test "category should be vaild" do 

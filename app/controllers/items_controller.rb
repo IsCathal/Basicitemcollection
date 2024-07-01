@@ -4,26 +4,26 @@ class ItemsController < ApplicationController
 
 
   def show
-    @item = Item.find(params[:id])
+    @items = Item.find(params[:id])
 
   end
 
   def index
-    @item = Item.all
+    @items = Item.all
 
   end
 
   def new
-    @item = Item.new
+    @items = Item.new
 
   end
 
 
   def create
   
-    @item = Item.new(items_params)
+    @items = Item.new(items_params)
     
-    if @item.save
+    if @items.save
       flash[:notice] = "Item was successfully created"
       redirect_to items_path
 
@@ -39,6 +39,6 @@ class ItemsController < ApplicationController
   end
 
   def require_user
-    @user = User.all
+    @users= User.all
   end
 end

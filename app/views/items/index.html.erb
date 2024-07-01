@@ -11,12 +11,12 @@
     </tr>
 
     <tbody>
-      <% @item.each do |itemsingle|%>
+      <% @items.each do |item|%>
       <tr>
-        <td><%= itemsingle.name %></td>
-        <td><%=itemsingle.description %></td>
-          <% if (itemsingle.user_id.to_i != 0) %>
-            <td>Owned by <%= @user.find(itemsingle.user_id.to_i).name %></td>
+        <td><%= item.name %></td>
+        <td><%=item.description %></td>
+          <% if (item.user_id.to_i != 0) %>
+            <td>Owned by <%= @users.find(item.user_id.to_i).name %></td>
             <% end %>
         <% end %>
     </tbody>

@@ -44,5 +44,8 @@ rails server
 Access the application
 Open your web browser and navigate to http://localhost:3000 to see the application running.
 
+rails test
+to run tests
+
 ##  Video of create item action  
 https://drive.google.com/file/d/1w1dQugWre1Lb6tU_2GmFum5ABrdhidlQ/view?usp=sharing

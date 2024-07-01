@@ -14,5 +14,4 @@ Rails.application.routes.draw do
   resources :items,  except: [:destroy, :update, :edit]
   resources :users,  except: [:destroy, :update, :edit]
 
-
 end

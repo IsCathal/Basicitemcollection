@@ -21,10 +21,7 @@
   <%= f.text_field :description %>
 </p>
 
-<p> 
-  <%= f.label :user_id, "User_ID" %><br/>
-  <%= f.text_field :user_id %>
-</p>
+<%= collection_select(:item, :user_id, @user, :id, :name, prompt: true ) %>
 
 
 <p>

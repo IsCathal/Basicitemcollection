@@ -1,23 +1,20 @@
 <h1>Display all the items</h1>
 
-
-<table class = "table" > 
+<table class="table">
   <thead>
     <tr>
       <th>Item</th>
-      <th>Descriptions</th>
+      <th>Description</th>
       <th>Owner</th>
-
     </tr>
-
-    <tbody>
-      <% @items.each do |item|%>
+  </thead>
+  <tbody>
+    <% @items.each do |item| %>
       <tr>
         <td><%= item.name %></td>
-        <td><%=item.description %></td>
-        <td> <%= item.owner_name %></td>
-        <% end %>
-    </tbody>
-  </thead>
+        <td><%= item.description %></td>
+        <td><%= item.owner_name %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
-

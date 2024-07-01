@@ -1,31 +1,26 @@
 <% if @items.errors.any? %>
-  <h2>You got an error </h2>
+  <h2>You got an error</h2>
   <ul>
     <% @items.errors.full_messages.each do |msg| %>
-     <li><%= msg %></li>
-
+      <li><%= msg %></li>
     <% end %>
   </ul>
-  <% end %>
+<% end %>
 
+<%= form_with(model: @items, local: true, data: { turbo: false }) do |f| %>
+  <p>
+    <%= f.label :name, "Item Name" %><br/>
+    <%= f.text_field :name %>
+  </p>
 
-<%= form_with(model: @items, local: true, data: { turbo: false } ) do |f| %>
+  <p>
+    <%= f.label :description, "Description" %><br/>
+    <%= f.text_field :description %>
+  </p>
 
-<p> 
-  <%= f.label :name, "Item Name" %><br/>
-  <%= f.text_field :name %>
-</p>
+  <%= collection_select(:item, :user_id, @users, :id, :name, prompt: true) %>
 
-<p> 
-  <%= f.label :description, "Description" %><br/>
-  <%= f.text_field :description %>
-</p>
-
-<%= collection_select(:item, :user_id, @users, :id, :name, prompt: true ) %>
-
-
-<p>
-  <%= f.submit %>
-</p>
-
+  <p>
+    <%= f.submit %>
+  </p>
 <% end %>

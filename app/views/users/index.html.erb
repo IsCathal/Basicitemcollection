@@ -1,18 +1,17 @@
 <h1>Display all the users</h1>
 
-<table class = "table" > 
+<table class="table">
   <thead>
     <tr>
       <th>Item</th>
     </tr>
-
-    <tbody>
-      <% @users.each do |user|%>
-      <tr>
-        <td><%= user.name %></td>
-         <td><%= user.id %></td>
-        <% end %>
-    </tbody>
   </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.id %></td>
+    </tr>
+    <% end %>
+  </tbody>
 </table>
-

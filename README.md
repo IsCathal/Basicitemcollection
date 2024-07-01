@@ -48,5 +48,10 @@ Open your web browser and navigate to http://localhost:3000 to see the applicati
 rails test
 to run tests
 
-##  Video of create item action  
-https://drive.google.com/file/d/1w1dQugWre1Lb6tU_2GmFum5ABrdhidlQ/view?usp=sharing
+##  Video of create item action
+[![Watch the video](https://github.com/IsCathal/Basicitemcollection/assets/52865729/2dee4e1c-f94b-4fc8-9a54-0c38f05108b9)](https://drive.google.com/file/d/1w1dQugWre1Lb6tU_2GmFum5ABrdhidlQ/view?usp=sharing)
+
+
+
+
+

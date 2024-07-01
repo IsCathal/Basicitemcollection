@@ -8,15 +8,12 @@
   </ul>
   <% end %>
 
-
 <%= form_with(model: @users,local: true, data: { turbo: false } ) do |f| %>
 
 <p> 
   <%= f.label :name, "Item Name" %><br/>
   <%= f.text_field :name %>
 </p>
-
-
 
 <p>
   <%= f.submit %>

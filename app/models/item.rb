@@ -8,7 +8,7 @@ class Item < ApplicationRecord
                           length: {minimum: 5, maximum: 300} 
    
   def owner_name
-    user.name if user_id.to_i != 0
+   "Owned by #{user.name}" if user_id.to_i != 0
   end
                 
 end

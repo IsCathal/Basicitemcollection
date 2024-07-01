@@ -15,9 +15,7 @@
       <tr>
         <td><%= item.name %></td>
         <td><%=item.description %></td>
-          <% if (item.user_id.to_i != 0) %>
-            <td>Owned by <%= item.owner_name %></td>
-            <% end %>
+        <td> <%= item.owner_name %></td>
         <% end %>
     </tbody>
   </thead>
